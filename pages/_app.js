@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
@@ -7,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     background: papayawhip;
+    font-family: 'Inter', sans-serif;
   }
 `
 
@@ -19,6 +21,9 @@ const theme = {
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <title>Portfolio</title>
+      </Head>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />

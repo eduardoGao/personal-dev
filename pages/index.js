@@ -7,5 +7,5 @@ const Title = styled.h1`
 `
 
 export default function index() {
-    return <Title>Hola</Title>
+    return <Title>Hola Mundo</Title>
 }
