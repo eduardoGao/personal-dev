@@ -1,0 +1,44 @@
+$primary-gradient: linear-gradient(90deg, #DA22FF 0%, #9733EE 100%);
+$light: #F7F7F7;
+
+.hero {
+  background: $primary-gradient;
+  width: 90%;
+  margin: 1em auto;
+  padding: 3em;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+.text {
+  color: $light;
+
+  & h1 {
+    margin: 1em 0 0;
+  }
+
+  & h4 {
+    margin: .5em;
+    color: #30084A;
+  }
+}
+
+.imgContainer {
+  width: 195px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.circle {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  // background: red;
+  border: 1px solid $light;
+  position: absolute;
+  left: 10;
+}

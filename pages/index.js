@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-
-const Title = styled.h1`
-    font-size: 5em;
-    color: ${({ theme }) => theme.colors.primary};
-    padding: 3em;
-`
+import Image from 'next/image'
+import Hero from '../components/Hero'
 
 export default function index() {
-    return <Title>Hola Mundo</Title>
+    return (
+        <>
+            <Hero />
+        </>
+    )
 }

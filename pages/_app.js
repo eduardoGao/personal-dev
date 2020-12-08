@@ -7,14 +7,16 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     margin: 0;
-    background: papayawhip;
+    background: white;
     font-family: 'Inter', sans-serif;
   }
 `
 
 const theme = {
   colors: {
-    primary: '#0070f3',
+    light: '#F7F7F7',
+    dark: '#161616',
+    gradientPrimary: 'linear-gradient(90deg, #DA22FF 0%, #9733EE 100%)'
   },
 }
 
@@ -25,9 +27,7 @@ function MyApp({ Component, pageProps }) {
         <title>Portfolio</title>
       </Head>
       <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <Component {...pageProps} />
     </>
   )
 }
